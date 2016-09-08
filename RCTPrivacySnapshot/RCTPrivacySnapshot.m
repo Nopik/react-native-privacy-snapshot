@@ -50,7 +50,9 @@ RCT_EXPORT_MODULE();
         UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
 
-        blurredScreenImageView.image = [viewImage applyLightEffect];
+        //UIColor *color = [UIColor colorWithRed:1 green:0.5 blue:0.2 alpha:0.2];
+        //blurredScreenImageView.image = [viewImage applyTintEffectWithColor:color];
+        blurredScreenImageView.image = [viewImage applyBlurWithRadius:6 tintColor:nil saturationDeltaFactor:1 maskImage:nil];
 
         self->obfuscatingView = blurredScreenImageView;
         [[UIApplication sharedApplication].keyWindow addSubview:self->obfuscatingView];
