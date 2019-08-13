@@ -2,6 +2,7 @@
   "name": "react-native-privacy-snapshot",
   "version": "1.0.0",
   "description": "Obscure passwords and other sensitive personal information when a react-native app transitions to the background",
+  "homepage": "https://github.com/Nopik/react-native-privacy-snapshot#readme",
   "main": "index.js",
   "repository": {
     "type": "git",
